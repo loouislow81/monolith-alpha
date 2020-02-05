@@ -1,4 +1,4 @@
-# monolith (alpha) 0.8.3
+# monolith (alpha)
 
 <p align="left">
   <img src="Screenshot_1.jpeg" width="420">
