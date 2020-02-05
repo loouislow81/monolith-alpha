@@ -1,0 +1,16 @@
+{
+    "name": "m.rpc.auth",
+    "version": "0.0.1",
+
+    "main": "./main.js",
+    "private": true,
+
+    "plugin": {
+        "provides": [],
+        "consumes": [
+            "hooks",
+            "rpc",
+            "workspace"
+        ]
+    }
+}

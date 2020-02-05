@@ -1,0 +1,14 @@
+{
+    "name": "m.vfs_http",
+    "version": "0.0.1",
+
+    "main": "./main.js",
+    "private": true,
+
+    "plugin": {
+        "consumes": [
+            "vfs",
+            "server"
+        ]
+    }
+}

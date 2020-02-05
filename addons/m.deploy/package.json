@@ -1,0 +1,19 @@
+{
+    "name": "m.deploy",
+    "version": "0.1.0",
+    "title": "Project",
+    "description": "Deployment menu for all solutions",
+    "homepage": "https://github.com/FriendCode/monolith",
+    "license": "Apache",
+    "author": {
+        "name": "Monolith",
+        "email": "contact@friendco.de",
+        "url": "https://www.m.sr.dogsbark.net"
+    },
+    "client": {
+        "main": "client"
+    },
+    "engines": {
+        "monolith": ">=0.7.0"
+    }
+}

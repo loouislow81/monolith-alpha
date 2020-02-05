@@ -1,0 +1,19 @@
+{
+    "name": "m.settings",
+    "version": "0.1.2",
+    "title": "Settings",
+    "description": "Configuration interface for your workspace.",
+    "homepage": "https://github.com/FriendCode/monolith",
+    "license": "Apache",
+    "author": {
+        "name": "Monolith",
+        "email": "contact@friendco.de",
+        "url": "https://www.m.sr.dogsbark.net"
+    },
+    "client": {
+        "main": "client"
+    },
+    "engines": {
+        "monolith": ">=0.7.0"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "m.theme.dark",
+    "version": "0.0.1",
+    "title": "Dark Theme",
+    "description": "Dark and gray theme.",
+    "homepage": "https://github.com/FriendCode/monolith",
+    "license": "Apache",
+    "author": {
+        "name": "Monolith",
+        "email": "contact@friendco.de",
+        "url": "https://www.m.sr.dogsbark.net"
+    },
+    "client": {
+        "main": "main"
+    },
+    "engines": {
+        "monolith": ">=0.7.0"
+    }
+}

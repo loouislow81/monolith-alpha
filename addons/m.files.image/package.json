@@ -1,0 +1,19 @@
+{
+    "name": "m.files.image",
+    "version": "0.0.1",
+    "title": "Image Viewer",
+    "description": "Images files viewer (png, jpeg, gif).",
+    "homepage": "https://github.com/FriendCode/monolith",
+    "license": "Apache",
+    "author": {
+        "name": "Monolith",
+        "email": "contact@friendco.de",
+        "url": "https://www.m.sr.dogsbark.net"
+    },
+    "client": {
+        "main": "client"
+    },
+    "engines": {
+        "monolith": ">=0.7.0"
+    }
+}

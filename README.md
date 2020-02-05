@@ -1,73 +1,69 @@
-# Codebox
-> "Open source cloud & desktop IDE."
+# monolith (alpha) 0.8.3
 
-[![Build Status](https://travis-ci.org/CodeboxIDE/codebox.png?branch=master)](https://travis-ci.org/CodeboxIDE/codebox)
-[![NPM version](https://badge.fury.io/js/codebox.svg)](http://badge.fury.io/js/codebox)
+<p align="left">
+  <img src="Screenshot_1.jpeg" width="420">
+</p>
 
-Codebox is a complete and modular Cloud IDE. It can run on any unix-like machine (Linux, Mac OS X). It is an open source component of [codebox.io](https://www.codebox.io) (Cloud IDE as a Service).
+All-purpose cloud IDE packed with peer environment, linters, debuggers, compilers, terminal, git, offline-env, etc.
 
-The IDE can run on your desktop (Linux or Mac), on your server or the cloud. You can use the [codebox.io](https://www.codebox.io) service to host and manage IDE instances.
+**Recommended** to use the Docker container application.
 
-Codebox is built with web technologies: `node.js`, `javascript`, `html` and `less`. The IDE possesses a very modular and extensible architecture, that allows you to build your own features with through add-ons. Codebox is the first open and modular IDE capable of running both on the Desktop and in the cloud (with offline support).
+# docker
 
-The project is open source under the [Apache 2.0](https://github.com/FriendCode/codebox/blob/master/LICENSE) license.
-A screencast of the IDE is available on [Youtube](https://www.youtube.com/watch?v=xvPEngyXA2A).
+get the container,
 
-![Image](https://raw.github.com/FriendCode/codebox/master/screenshot.png)
-
-## How to install and run Codebox
-
-#### Desktop Applications
-
-Installers for the latest stable build for **Mac** and **Linux** can be downloaded on the [release page](https://github.com/FriendCode/codebox/releases).
-
-Instructions on how to install it can be found for each release.
-
-#### Install from NPM
-
-Codebox can be installed as a Node package and use programatically or from the command line.
-
-Install Codebox globally using NPM:
-```
-$ npm install -g codebox
+```bash
+$ docker pull loouislow81/monolith-alpha:latest
 ```
 
-And start the IDE from the command line:
-```
-$ codebox run ./myworkspace --open
-```
+run the container,
 
-Use this command to run and open Codebox IDE. By default, Codebox uses GIT to identify you, you can use the option ```--email=john.doe@gmail.com``` to define the email you want to use during GIT operations.
-
-Others comand line options are available and can be list with: ```codebox --help```. For deeper configuration, take a look at the documentation about [environment variables](http://help.codebox.io/ide/env.html).
-
-#### Command line options
-
-```
--h, --help              output usage information
--V, --version           output the version number
--r, --root [path]       Root folder for the workspace, default is current directory
--t, --templates [list]  Configuration templates, separated by commas
--p, --port [port]       HTTP port
+```bash
+$ docker run -it -p 8787:8787 -v /path/to/your/project/folder:/opt/monolith/workspace loouislow81/monolith-alpha:latest
 ```
 
-#### Need help?
+run the container at background,
 
-The IDE's documentation can be found at [help.codebox.io](http://help.codebox.io). Feel free to ask any questions or signal problems by adding issues.
+```bash
+$ docker run -it -d -p 8787:8787 -v /path/to/your/project/folder:/opt/monolith/workspace loouislow81/monolith-alpha:latest
+```
 
-## Helping Codebox
+# usage
 
-**I want to help with the code:** Codebox accepts pull-requests, please see the [Contributing to Codebox](https://github.com/FriendCode/codebox/blob/master/CONTRIBUTING.md) guide for information on contributing to this project. And don't forget to add your contact informations on the AUTHORS list.
+on your web browser, enter this IP Block **http://youripaddress:8787**
 
-**I found a bug:** File it as an [issue](https://github.com/FriendCode/codebox/issues) and please describe as much as possible the bug and the context.
+predefined test user login and password,
 
-**I have a new suggestion:** For feature requests please first check [the issues list](https://github.com/FriendCode/codebox/issues) to see if it's already there. If not, feel free to file it as an issue and to define the label **enhancement**.
+- user1 (user1@test.com, user1)
+- user2 (user2@test.com, user2)
+- user3 (user3@test.com, user3)
+- user4 (user4@test.com, user4)
+- user5 (user5@test.com, user5)
 
-## Contact info
+to add more or change the predefined user accounts, you will need to edit `run-stack.conf` file. As for Docker container application, you will need to recompile yourself a new container with the `Dockerfile` provided.
 
-* **Website:** [www.codebox.io](https://www.codebox.io)
-* **Twitter:** [@CodeboxIO](https://twitter.com/CodeboxIO)
-* **Blog:** [blog.codebox.io](http://blog.codebox.io)
-* **Youtube:** [Codebox Channel](http://www.youtube.com/channel/UCWocQwS2VmDS3Ej0LQYWVIw)
+Enjoy!
 
+---
 
+MIT License
+
+Copyright (c) 2016 Loouis Low
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

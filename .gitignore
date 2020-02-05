@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+.c9
+
+git-rebase-refactor.sh
+logs.txt
+
+package-lock.json
+
+node_modules/
+=======
 # Logs
 logs
 *.log
@@ -39,3 +49,4 @@ build
 
 # Packages for testing
 test/packages
+>>>>>>> 98b4710f1bdba615dddbab56011a86cd5f16897b

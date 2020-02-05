@@ -1,4 +1,115 @@
 {
+<<<<<<< HEAD
+  "name": "monolith",
+  "version": "0.8.3",
+  "description": "All-purpose cloud IDE packed with peer environment, linters, debuggers, compilers, terminal, git, offline-env, etc.",
+  "homepage": "https://www.dogsbark.net",
+  "author": {
+    "name": "dogsbark Inc",
+    "email": "studio@dogsbark.net"
+  },
+  "license": "MIT",
+    "scripts": {
+    "start": "[ -f .env ] && . ./.env || echo 'Store your environment config in .env'; ./node_modules/.bin/grunt"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "q": "0.9.6",
+    "lodash": "2.4.1",
+    "event-stream": "3.0.11",
+    "readable-stream": "1.0.2",
+    "request": "2.27.0",
+    "hr.js": "0.6.3",
+    "commander": "1.1.1",
+    "googlediff": "0.1.0",
+    "eventemitter2": "0.4.13",
+    "engineer": "0.1.0",
+    "express": "3.3.5",
+    "socket.io": "0.9.16",
+    "loadfire": "1.3.4",
+    "shux": "1.0.0",
+    "vfs-http-adapter": "git+https://github.com/AaronO/vfs-http-adapter.git#6c9934e4f2da7886310397170b6ebaf745833936",
+    "vfs-local": "git+https://github.com/FriendCode/vfs-local.git#af6bafede0ccb9fb362a0c280e708648f7363f33",
+    "watchr": "2.4.11",
+    "gittle": "0.2.3",
+    "uuid": "1.4.1",
+    "glob": "3.2.6",
+    "temp": "0.6.0",
+    "wrench": "1.5.7",
+    "requirejs": "2.1.11",
+    "less": "1.5.0",
+    "csso": "1.3.9",
+    "fstream": "0.1.25",
+    "tar": "0.1.19",
+    "open": "0.0.4",
+    "crc": "0.2.1",
+    "grunt": "0.4.2",
+    "grunt-cli": "0.1.11",
+    "harbor": "0.2.0",
+    "qpatch": "0.0.8",
+    "ctags": "0.11.0",
+    "minimatch": "0.2.14",
+    "semver": "2.2.1",
+    "bugs": "0.1.0"
+  },
+  "devDependencies": {
+    "grunt-exec": "0.4.5",
+    "grunt-contrib-compress": "0.6.0",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-contrib-clean": "0.5.0"
+  },
+  "bin": {
+    "monolith": "./bin/monolith.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.com/dogsbark/monolith.git"
+  },
+  "keywords": [
+    "cli",
+    "ide",
+    "server",
+    "desktop",
+    "development",
+    "code",
+    "editor"
+  ],
+  "contributors": [
+    {
+      "name": "dogsbark",
+      "email": "studio@dogsbark.net"
+    }
+  ],
+  "config": {
+    "unsafe-perm": true
+  },  
+  "main": "index.js",
+  "bugs": {
+    "url": "https://bitbucket.com/dogsbark/monolith/issues"
+  },
+  "_id": "monolith@0.8.3",
+  "_shasum": "e8ae8e972ad6a893fc2efeae3e7ce25cc7035c79",
+  "_from": "monolith@",
+  "_npmVersion": "2.1.18",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "Loouis Low",
+    "email": "loouis@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "Loouis Low",
+      "email": "loouis@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e8ae8e972ad6a893fc2efeae3e7ce25cc7035c79",
+    "tarball": "https://registry.npmjs.org/monolith/-/monolith-0.8.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "http://registry.npmjs.org/monolith/-/monolith-0.8.3.tgz",
+  "readme": "ERROR: No README data found!"
+=======
     "name": "codebox",
     "description": "Extensible hybrid IDE",
     "version": "1.0.0-alpha.5",
@@ -105,4 +216,5 @@
     "scripts": {
         "test": "export TESTING=true; mocha --reporter list"
     }
+>>>>>>> 98b4710f1bdba615dddbab56011a86cd5f16897b
 }

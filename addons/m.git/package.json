@@ -1,0 +1,31 @@
+{
+    "name": "m.git",
+    "version": "0.0.3",
+    "title": "GIT",
+    "description": "Integration of Git into your workspace.",
+    "homepage": "https://github.com/FriendCode/monolith",
+    "license": "Apache",
+    "author": {
+        "name": "Monolith",
+        "email": "contact@friendco.de",
+        "url": "https://www.m.sr.dogsbark.net"
+    },
+    "client": {
+        "main": "client"
+    },
+    "main": "./node/main",
+    "plugin": {
+        "provides": [
+            "git",
+            "git_rpc"
+        ],
+        "consumes": [
+            "rpc",
+            "events",
+            "workspace"
+        ]
+    },
+    "engines": {
+        "monolith": ">=0.7.0"
+    }
+}
