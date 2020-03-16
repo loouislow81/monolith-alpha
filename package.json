@@ -23,7 +23,7 @@
     "googlediff": "0.1.0",
     "eventemitter2": "0.4.13",
     "engineer": "0.1.0",
-    "express": "3.3.5",
+    "express": "4.17.1",
     "socket.io": "0.9.16",
     "loadfire": "1.3.4",
     "shux": "1.0.0",
